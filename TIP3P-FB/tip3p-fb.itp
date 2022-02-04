@@ -1,0 +1,23 @@
+[ defaults ]
+1        3        yes        0.5    0.5
+
+[ atomtypes ]
+ water_o   OW    8     15.99940    -0.820       A    0.317796456355  0.652143528104
+ water_h   HW    1      1.00800     0.410       A    0.00000e+00  0.00000e+00
+
+[ moleculetype ]
+SOL        2
+
+[ atoms ]
+     1  water_o   1    SOL     OW      1      -0.848448
+     2  water_h   1    SOL    HW1      1       0.424224
+     3  water_h   1    SOL    HW2      1       0.424224
+
+[ settles ]
+1    1    0.101181082494    0.163868385147
+
+[ exclusions ]
+1    2    3
+2    1    3
+3    1    2
+

@@ -1,0 +1,40 @@
+comm_mode       = linear
+integrator	= md
+nsteps          = 500000
+dt              = 0.002
+nstxout 	= 5000
+nstvout		= 5000
+nstfout		= 0
+nstlog		= 0
+nstenergy	= 5000
+xtc_grps        = System
+energygrps      = System
+
+nstlist         = 20
+ns_type         = grid
+rlist           = 1.1
+vdwtype         = switch
+coulombtype     = pme-switch
+rcoulomb        = 0.9
+rcoulomb_switch = 0.85
+rvdw            = 0.9
+rvdw_switch     = 0.85
+constraints     = h-bonds
+pbc             = xyz
+DispCorr        = EnerPres
+
+tcoupl		= nose-hoover
+tc_grps		= System
+ref_t		= 298.15
+tau_t		= 1.0
+
+gen_vel 	= yes
+gen_temp	= 298.15
+gen_seed        = 123456
+
+pcoupl          = berendsen
+pcoupltype      = isotropic
+compressibility = 4.5e-5
+ref_p           = 1.0
+tau_p           = 1.0
+

@@ -1,0 +1,24 @@
+comm_mode       = linear
+integrator	= md
+nsteps          = 20000
+dt              = 0.001
+nstxout 	= 100
+nstvout		= 100
+nstfout		= 0
+nstlog		= 0
+nstenergy	= 100
+xtc_grps        = System
+energygrps      = System
+
+nstlist         = 1
+ns_type         = grid
+rlist           = 1.1
+vdwtype         = switch
+coulombtype     = pme-switch
+rcoulomb        = 0.9
+rcoulomb_switch = 0.85
+rvdw            = 0.9
+rvdw_switch     = 0.85
+constraints     = h-bonds
+pbc             = xyz
+DispCorr        = EnerPres
